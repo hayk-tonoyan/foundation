@@ -1,0 +1,27 @@
+.footer-holder {
+  color: white;
+  padding: 50px 16px;
+  background: var(--primary-color);
+
+  .footer {
+    gap: 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    .info-title {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      gap: 10px;
+      display: flex;
+      list-style: none;
+      flex-direction: column;
+
+      li {
+      }
+    }
+  }
+}

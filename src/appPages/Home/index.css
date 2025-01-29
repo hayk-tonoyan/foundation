@@ -1,0 +1,26 @@
+.animated-section {
+  gap: 20px;
+  width: 100%;
+  display: grid;
+  max-width: 1440px;
+  margin: 120px auto auto;
+  grid-template-columns: 1fr 1fr;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+}
+
+.animated-section-info {
+  gap: 24px;
+  display: grid;
+
+  p {
+    gap: 12px;
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
+  }
+}

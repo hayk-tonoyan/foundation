@@ -1,0 +1,22 @@
+.help-inner-page-holder {
+  width: 100%;
+  display: flex;
+  padding: 0 16px 100px;
+  flex-direction: column;
+}
+
+.help-inner-page {
+  gap: 50px;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  max-width: 1440px;
+
+  .help-inner-description {
+    font-size: 18px;
+  }
+
+  img {
+    width: 100%;
+  }
+}

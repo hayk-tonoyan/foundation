@@ -1,0 +1,32 @@
+.donate-page-holder {
+  width: 100%;
+  display: flex;
+  padding: 0 16px 100px;
+  flex-direction: column;
+}
+
+.donate-page {
+  gap: 50px;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  max-width: 1440px;
+
+  .page-poster {
+    img {
+      width: 100%;
+    }
+  }
+
+  .page-info {
+    gap: 40px;
+    display: flex;
+
+    .bank-info {
+      gap: 10px;
+      display: flex;
+      margin-top: 6px;
+      flex-direction: column;
+    }
+  }
+}
