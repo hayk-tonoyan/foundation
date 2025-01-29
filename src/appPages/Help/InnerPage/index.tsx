@@ -1,6 +1,6 @@
 import './index.css';
 
-export default function InnerPage({ item }: { item: any }) {
+export default function InnerPage({ item }: { item: { title: string, imageSrc: string, description: string } }) {
   return (
     <div className="help-inner-page-holder page">
       <h2 className="page-title">{item.title}</h2>

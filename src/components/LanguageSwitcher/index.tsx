@@ -1,6 +1,6 @@
 'use client';
 
-import {usePathname} from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useState } from 'react';
 
 import { useLanguageSwitcher } from "@/hooks/useLanguageSwitcher";
@@ -25,11 +25,12 @@ const LanguageSwitcher = () => {
   const handleSelectLanguage = (lang: string, label: string, emoji: string) => {
     switchLanguage(lang);
     setSelectedLanguage(`${emoji} ${label}`);
+    setShowLanguages(false); // Close dropdown after selection
   };
 
   return (
     <div className="language-switcher" style={{ position: 'relative', fontFamily: 'Arial, sans-serif' }}>
-      <button onClick={() => setShowLanguages(prev => !prev)} className="dropdown-btn" >
+      <button onClick={() => setShowLanguages(prev => !prev)} className="dropdown-btn">
         <span style={{ fontSize: '16px' }}>{selectedLanguage || 'Select Language'}</span>
       </button>
       {showLanguages && (
@@ -45,18 +46,27 @@ const LanguageSwitcher = () => {
           width: 'max-content',
           color: 'black',
         }}>
-          <div onClick={() => handleSelectLanguage('en', 'English', '🇬🇧')} className="dropdown-item"
-               style={{padding: '10px', cursor: 'pointer', borderBottom: '1px solid #ddd'}}>
+          <button
+            onClick={() => handleSelectLanguage('en', 'English', '🇬🇧')}
+            className="dropdown-item"
+            style={{ padding: '10px', cursor: 'pointer', borderBottom: '1px solid #ddd', background: 'none', border: 'none', width: '100%', textAlign: 'left' }}
+          >
             🇬🇧 English
-          </div>
-          <div onClick={() => handleSelectLanguage('nl', 'Dutch', '🇳🇱')} className="dropdown-item"
-               style={{padding: '10px', cursor: 'pointer', borderBottom: '1px solid #ddd'}}>
+          </button>
+          <button
+            onClick={() => handleSelectLanguage('nl', 'Dutch', '🇳🇱')}
+            className="dropdown-item"
+            style={{ padding: '10px', cursor: 'pointer', borderBottom: '1px solid #ddd', background: 'none', border: 'none', width: '100%', textAlign: 'left' }}
+          >
             🇳🇱 Nederlands
-          </div>
-          <div onClick={() => handleSelectLanguage('am', 'Armenia', '🇦🇲')} className="dropdown-item"
-               style={{padding: '10px', cursor: 'pointer', borderBottom: '1px solid #ddd'}}>
+          </button>
+          <button
+            onClick={() => handleSelectLanguage('am', 'Armenia', '🇦🇲')}
+            className="dropdown-item"
+            style={{ padding: '10px', cursor: 'pointer', borderBottom: '1px solid #ddd', background: 'none', border: 'none', width: '100%', textAlign: 'left' }}
+          >
             🇦🇲 Armenians
-          </div>
+          </button>
         </div>
       )}
     </div>
