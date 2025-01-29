@@ -1,9 +1,6 @@
 import { LangMappingEnum } from '../enums';
 
 export const DEFAULT_LANG = LangMappingEnum.en;
-export const BEARER = 'Bearer';
-export const ACCESS_TOKEN = 'access-token';
-export const SESSION_STORAGE_WEBSITE_KEY = 'websiteData';
 
 export const META_TITLE = 'Hay Network';
 export const META_DESCRIPTION = 'Hay Network foundation';
