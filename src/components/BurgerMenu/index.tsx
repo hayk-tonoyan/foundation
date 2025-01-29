@@ -24,7 +24,14 @@ export default function BurgerMenu({ children }: { children: ReactNode }) {
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
       <div className={`burger-content ${isOpen ? 'show' : ''}`}>
-        <nav className="burger-nav" onClick={() => setIsOpen(!isOpen)}>
+        <nav
+          // eslint-disable-next-line
+          role="menu"
+          className="burger-nav"
+          tabIndex={0}
+          onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setIsOpen(false); }}
+          onClick={() => setIsOpen(!isOpen)}
+        >
           {children}
         </nav>
       </div>

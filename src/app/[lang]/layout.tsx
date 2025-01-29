@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import HeaderWrapper from "@/components/Header";
 import Header from "@/components/Header/Header";
 import SubHeader from "@/components/Header/SubHeader";
+import {MobileViewDetector} from "@/components/MobileViewDetector";
 import { Toaster } from '@/components/ui/toaster';
 import getLocale from '@/i18n/request';
 import ReactQueryProvider from '@/providers/ReactQueryProvider';
@@ -14,7 +15,6 @@ import StyledComponentsProvider from '@/providers/StyledComponentsProvider';
 import { StyledAppWrapper } from './style';
 
 import './globals.css';
-import {MobileViewDetector} from "@/components/MobileViewDetector";
 
 export const metadata: Metadata = {
   title: META_TITLE,
