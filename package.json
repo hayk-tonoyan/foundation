@@ -6,7 +6,6 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "yarn eslint . --ext .ts,.tsx && yarn prettier",
     "prettier": "prettier --write .",
     "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
     "finish": "yarn eslint . --ext .ts,.tsx && yarn tsc && npx lint-staged"
