@@ -119,3 +119,9 @@ a {
     margin-bottom: 40px;
   }
 }
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

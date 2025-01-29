@@ -8,6 +8,11 @@
     min-height: 600px;
     grid-template-columns: 1fr 1fr;
 
+    .mobile & {
+      display: flex;
+      flex-direction: column;
+    }
+
     > div {
       overflow: hidden;
 

@@ -9,11 +9,11 @@ import './index.css';
 
 const findLanguage = (value: string) => {
   if (value.includes('/nl')) {
-    return '🇳🇱 Nederlands';
+    return '🇳🇱 NL';
   } else if (value.includes('/am')) {
-    return '🇦🇲 Armenians';
+    return '🇦🇲 AM';
   }
-  return '🇬🇧 English';
+  return '🇬🇧 EN';
 }
 
 const LanguageSwitcher = () => {
@@ -51,21 +51,21 @@ const LanguageSwitcher = () => {
             className="dropdown-item"
             style={{ padding: '10px', cursor: 'pointer', borderBottom: '1px solid #ddd', background: 'none', border: 'none', width: '100%', textAlign: 'left' }}
           >
-            🇬🇧 English
+            🇬🇧 EN
           </button>
           <button
             onClick={() => handleSelectLanguage('nl', 'Dutch', '🇳🇱')}
             className="dropdown-item"
             style={{ padding: '10px', cursor: 'pointer', borderBottom: '1px solid #ddd', background: 'none', border: 'none', width: '100%', textAlign: 'left' }}
           >
-            🇳🇱 Nederlands
+            🇳🇱 NL
           </button>
           <button
             onClick={() => handleSelectLanguage('am', 'Armenia', '🇦🇲')}
             className="dropdown-item"
             style={{ padding: '10px', cursor: 'pointer', borderBottom: '1px solid #ddd', background: 'none', border: 'none', width: '100%', textAlign: 'left' }}
           >
-            🇦🇲 Armenians
+            🇦🇲 AM
           </button>
         </div>
       )}

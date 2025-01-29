@@ -12,6 +12,10 @@
   display: grid;
   max-width: 1440px;
 
+  .mobile & {
+    overflow: hidden;
+  }
+
   .page-poster {
     img {
       width: 100%;
@@ -21,6 +25,10 @@
   .page-info {
     gap: 40px;
     display: flex;
+
+    .mobile & {
+      flex-direction: column;
+    }
 
     .bank-info {
       gap: 10px;

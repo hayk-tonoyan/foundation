@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getTranslations } from 'next-intl/server';
 import React from 'react';
 
+import BurgerMenu from "@/components/BurgerMenu";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 import LogoHolder from './LogoHolder';
@@ -16,18 +17,20 @@ export default async function Header() {
     <StyledHeader>
       <LogoHolder />
       <div className="nav">
-        <Link href="/">
-          {t('home')}
-        </Link>
-        <Link href="/about">
-          {t('aboutUs')}
-        </Link>
-        <Link href="/help">
-          {t('livesYouCanChange')}
-        </Link>
-        <Link href="/anbi">
-          ANBI
-        </Link>
+        <BurgerMenu>
+          <Link href="/">
+            {t('home')}
+          </Link>
+          <Link href="/about">
+            {t('aboutUs')}
+          </Link>
+          <Link href="/help">
+            {t('livesYouCanChange')}
+          </Link>
+          <Link href="/anbi">
+            ANBI
+          </Link>
+        </BurgerMenu>
         <div>
           <LanguageSwitcher />
         </div>

@@ -14,6 +14,7 @@ import StyledComponentsProvider from '@/providers/StyledComponentsProvider';
 import { StyledAppWrapper } from './style';
 
 import './globals.css';
+import {MobileViewDetector} from "@/components/MobileViewDetector";
 
 export const metadata: Metadata = {
   title: META_TITLE,
@@ -115,23 +116,25 @@ export default async function RootLayout({
       {/*  <meta property="og:type" content="website" />*/}
       {/*</head>*/}
       <body>
-        <ReactQueryProvider>
-          <NextIntlClientProvider locale={locale} messages={messages}>
-            <StyledComponentsProvider>
-              <div className="main-wrapper">
-                <HeaderWrapper>
-                  <SubHeader />
-                  <Header/>
-                </HeaderWrapper>
-                <StyledAppWrapper>
-                  {children}
-                </StyledAppWrapper>
-                <Footer />
-                <Toaster />
-              </div>
-            </StyledComponentsProvider>
-          </NextIntlClientProvider>
-        </ReactQueryProvider>
+        <MobileViewDetector>
+          <ReactQueryProvider>
+            <NextIntlClientProvider locale={locale} messages={messages}>
+              <StyledComponentsProvider>
+                <div className="main-wrapper">
+                  <HeaderWrapper>
+                    <SubHeader />
+                    <Header/>
+                  </HeaderWrapper>
+                  <StyledAppWrapper>
+                    {children}
+                  </StyledAppWrapper>
+                  <Footer />
+                  <Toaster />
+                </div>
+              </StyledComponentsProvider>
+            </NextIntlClientProvider>
+          </ReactQueryProvider>
+        </MobileViewDetector>
       </body>
     </html>
   );

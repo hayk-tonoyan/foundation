@@ -2,9 +2,15 @@
   gap: 20px;
   width: 100%;
   display: grid;
+  padding: 0 16px;
   max-width: 1440px;
   margin: 120px auto auto;
   grid-template-columns: 1fr 1fr;
+
+  .mobile & {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
   img {
     width: 100%;

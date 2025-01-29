@@ -79,6 +79,10 @@
         position: relative;
         padding-inline-start: 12px;
 
+        .mobile & {
+          font-size: 24px;
+        }
+
         &:before {
           left: 0;
           top: 50%;
