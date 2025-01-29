@@ -10,7 +10,7 @@ import './index.css';
 import {helpData} from "@/common/constants";
 
 // @ts-ignore
-const Slider = SliderComponent as unknown as React.ComponentType<any>;
+const Slider = SliderComponent as unknown as React.ComponentType<>;
 
 function SwipeToSlide() {
   const settings: Settings = {
@@ -37,6 +37,7 @@ function SwipeToSlide() {
 
   return (
     <div className="slider-container">
+      {/*@ts-ignore*/}
       <Slider {...settings}>
         {slides}
       </Slider>

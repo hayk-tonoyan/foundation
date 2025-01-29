@@ -9,7 +9,6 @@ import SubHeader from "@/components/Header/SubHeader";
 import { Toaster } from '@/components/ui/toaster';
 import getLocale from '@/i18n/request';
 import ReactQueryProvider from '@/providers/ReactQueryProvider';
-import StoreProvider from '@/providers/StoreProvider';
 import StyledComponentsProvider from '@/providers/StyledComponentsProvider';
 
 import { StyledAppWrapper } from './style';
