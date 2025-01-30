@@ -1,6 +1,9 @@
-import './index.css';
+import Image from "next/image";
 
+import WhatsappIcon from "@/assets/svg/whatsapp.svg";
 import { MEMBERS } from '@/common/constants';
+
+import './index.css';
 
 const Footer = () => {
   return (
@@ -17,11 +20,12 @@ const Footer = () => {
         <div className="contact-info">
           <p className="info-title">Contacts</p>
           <ul>
-            {Object.entries(MEMBERS).map(([key, { name, phone }]) => (
+            {Object.entries(MEMBERS).map(([key, { name, phone, whatsapp }]) => (
               phone && (
                 <li key={key}>
                   <a href={`tel:${phone}`}>
                     {name}: {phone}
+                    {whatsapp && (<Image src={WhatsappIcon} alt="whatsapp"/>)}
                   </a>
                 </li>
               )))}

@@ -38,7 +38,7 @@
     font-style: italic;
   }
 
-  img {
+  > img {
     width: 100%;
     object-fit: cover;
     max-height: 400px;
@@ -46,6 +46,14 @@
   }
 
   a {
+    display: flex;
+    align-items: center;
+
+    > img {
+      width: 80px;
+      margin-inline-start: 8px;
+    }
+
     &:hover {
       text-decoration: underline;
     }
