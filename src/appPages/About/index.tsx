@@ -1,5 +1,7 @@
 import {useTranslations} from "next-intl";
 
+import Logo from '../../assets/png/logo.png';
+
 import './index.css';
 
 export default function AboutPage() {
@@ -11,7 +13,7 @@ export default function AboutPage() {
       <div className="about">
         <div className="about-image">
           <img
-            src="https://www.hay-network.com/wp-content/uploads/2024/11/cropped-421769316_407595915109901_9175327298925973249_n-1.jpg"
+            src={Logo.src}
             alt="about"/>
         </div>
         <div className="about-content">
