@@ -11,7 +11,7 @@ export default function TeamPage() {
 
   return (
     <div className="team-page-holder page">
-      <h2 className="page-title">{t('team')}</h2>
+      <h2 className="page-title ellipsis">{t('team')}</h2>
       <div className="team-page">
         {Object.entries(MEMBERS).map(([key, { name, avatar, phone, whatsapp }]) => (
           <div key={key} className="team-member-card">

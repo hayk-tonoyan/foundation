@@ -9,7 +9,7 @@ export default function Anbi() {
 
   return (
     <div className="anbi-page-holder page">
-      <h2 className="page-title">ANBI</h2>
+      <h2 className="page-title ellipsis">ANBI</h2>
       <div className="anbi-page">
         <div className="anbi-content">
           <p><strong>KVK-nummer: </strong>92743234</p>

@@ -9,7 +9,7 @@ export default function AboutPage() {
 
   return (
     <div className="about-holder page">
-      <h2 className="page-title">{t('aboutUs')}</h2>
+      <h2 className="page-title ellipsis">{t('aboutUs')}</h2>
       <div className="about">
         <div className="about-image">
           <img

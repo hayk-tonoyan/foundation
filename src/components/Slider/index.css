@@ -24,9 +24,17 @@
 
     &.slick-prev {
       left: 25px !important;
+
+      .mobile & {
+        left: 6px !important;
+      }
     }
     &.slick-next {
       right: 25px !important;
+
+      .mobile & {
+        right: 6px !important;
+      }
     }
   }
 

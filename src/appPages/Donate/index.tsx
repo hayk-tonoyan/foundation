@@ -5,7 +5,7 @@ import './index.css';
 export default function DonatePage() {
   return (
     <div className="donate-page-holder page">
-      <h2 className="page-title">Donate</h2>
+      <h2 className="page-title ellipsis">Donate</h2>
       <div className="donate-page">
         <div className="page-poster">
           <img src="https://www.hay-network.com/wp-content/themes/prime-charity-trust/assets/images/default-header.jpg" alt="donate"/>

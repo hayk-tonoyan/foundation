@@ -14,13 +14,12 @@ export default function StoriesPage() {
 
   const helpInfo = useMemo(
     () =>
-      helpData.map(({ title, description, imageSrc }) => (
+      helpData.map(({ title, imageSrc }) => (
         <div key={title}>
           <Link href={`/stories/${encodeURIComponent(title.replace(/ /g, '-'))}`}>
             <div className="help-card">
               <div className="help-info">
                 <h2>{title}</h2>
-                <p>{description}</p>
               </div>
               {/*@ts-ignore*/}
               <img src={imageSrc} alt={title} />
@@ -33,7 +32,7 @@ export default function StoriesPage() {
 
   return (
     <div className="help-page-holder page">
-      <h2 className="page-title">{t('stories')}</h2>
+      <h2 className="page-title ellipsis">{t('stories')}</h2>
       <div className="help-page">{helpInfo}</div>
     </div>
   );
