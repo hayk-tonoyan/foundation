@@ -6,13 +6,15 @@ import SliderComponent, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import useHelpData from "@/hooks/useHelpData";
 import './index.css';
-import {helpData} from "@/common/constants";
 
 // @ts-ignore
 const Slider = SliderComponent as unknown as React.ComponentType<>;
 
 function SwipeToSlide() {
+  const helpData = useHelpData();
+
   const settings: Settings = {
     fade: true,
     speed: 500,
@@ -31,6 +33,7 @@ function SwipeToSlide() {
         <p>{description}</p>
         <Link href="/" className="learn-mor-button">Learn More</Link>
       </div>
+      {/*@ts-ignore*/}
       <img src={imageSrc} alt={title} />
     </div>
   )), [helpData]);

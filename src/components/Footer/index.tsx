@@ -1,5 +1,7 @@
 import './index.css';
 
+import { MEMBERS } from '@/common/constants';
+
 const Footer = () => {
   return (
     <div className="footer-holder">
@@ -15,8 +17,14 @@ const Footer = () => {
         <div className="contact-info">
           <p className="info-title">Contacts</p>
           <ul>
-            <li>Murat Yildiz +31651852165</li>
-            <li>Tigran Pogosian +37477060591</li>
+            {Object.entries(MEMBERS).map(([key, { name, phone }]) => (
+              phone && (
+                <li key={key}>
+                  <a href={`tel:${phone}`}>
+                    {name}: {phone}
+                  </a>
+                </li>
+              )))}
           </ul>
         </div>
       </div>

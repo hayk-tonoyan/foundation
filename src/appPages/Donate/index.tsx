@@ -1,3 +1,5 @@
+import QRImage from '@/assets/png/qr.jpg';
+
 import './index.css';
 
 export default function DonatePage() {
@@ -10,7 +12,7 @@ export default function DonatePage() {
         </div>
         <div className="page-info">
           <div className="donate-qr">
-            <img src="https://www.hay-network.com/wp-content/uploads/2024/11/IMG_4817.jpeg" alt="donate-qr"/>
+            <img src={QRImage.src} alt="donate-qr"/>
           </div>
           <div className="bank-info">
             <h3>BANK ACCOUNT</h3>

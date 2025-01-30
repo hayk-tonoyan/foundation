@@ -7,7 +7,7 @@
   "contact": "contacten",
   "emailUs": "Stuur ons een e-mail",
   "makeMiraclesHappen": "Wonderen laten gebeuren",
-  "livesYouCanChange": "Levens die je kunt veranderen",
+  "stories": "Verhalen",
   "aboutDescription": "Stichting Hay Network Foundation is opgericht in 2024 en zet zich zet voor het ondersteunen en verbeteren van het welzijn van de Armeense diaspora en behoeftigen met Armeense roots.Wij bieden materiele hulp en ondersteuning bij onderwijs voor de Armeense diaspora. Daarnaast bieden we humanitaire hulp aan hulpbehoevenden met Armeense wortels. We doen dat door samen te werken met Nederlandse organisaties, bedrijven en overheden.",
   "investInArmeniasFutureTitle": "Investeer in de toekomst van Armenië:",
   "whyNowTitle": "Waarom nu?",
@@ -16,5 +16,23 @@
   "investInArmeniasFutureDescription": "Stel je voor: een wereld waarin jongeren niet alleen dromen van een betere toekomst, maar deze actief vormgeven. Dit is het krachtige doel van stichting Hay Network. Als organisatie willen we kansarme jongeren helpen bij hun opleiding. Nu is het tijd om samen de handen ineen te slaan en actie te ondernemen voor de volgende generatie.Door te investeren in initiatieven waardoor onze jongeren beter worden opgeleid, investeer je rechtstreeks in de bouwstenen van een betere morgen.",
   "whyNowDescription": "De tijd om te handelen is nu. Elke euro, dollar, of welke valuta dan ook, die je doneert, is een investering in een veelbelovende toekomst. Door gezamenlijk de handen ineen te slaan, kunnen we de kansen vergroten voor jongeren die anders misschien niet de mogelijkheid zouden hebben om hun dromen waar te maken.",
   "howCanYouHelpDescription": "Bezoek onze website op www.haynetwork.com/doneren en draag je steentje bij. Samen kunnen we voor onze jongeren een betere toekomst creëren, al is het één jongere per keer.",
-  "thankYouForYourSupportDescription": "Met jouw hulp kunnen we de deuren openen naar meer mogelijkheden voor de nieuwe generatie. Laten we samen zorgen voor verandering en de toekomst vormgeven waar we allemaal van dromen."
+  "thankYouForYourSupportDescription": "Met jouw hulp kunnen we de deuren openen naar meer mogelijkheden voor de nieuwe generatie. Laten we samen zorgen voor verandering en de toekomst vormgeven waar we allemaal van dromen.",
+  "team": "Team",
+  "chairman": "Voorzitter",
+  "secretary": "Secretaris",
+  "treasurer": "Penningmeester",
+  "sliders": {
+    "1": {
+      "title": "Onderwijssteun voor Armeense diaspora",
+      "description": "Onderwijs Eén van onze missies is het bieden van ondersteuning bij onderwijs voor de Armeense diaspora. We gaan dit o.a. doen door onderwijsinstellingen verzoeken om ondersteuning te bieden, onder andere in benodigdheden (materialen), en het geven van advies."
+    },
+    "2": {
+      "title": "Humanitaire hulp voor Armeniërs",
+      "description": "Humanitaire hulp Een andere missie is het verlenen van humanitaire hulp aan hulpbehoevenden met Armeense wortels. We willen dit doen door het vragen van materiële hulp aan bedrijven, (overheid)instanties en individuen."
+    },
+    "3": {
+      "title": "Steun voor weeshuizen en ouderenzorg",
+      "description": "Weeshuizen en ouderenzorg We willen ook graag hulp bieden aan weeshuizen, ouderen en mensen met een handicap. Dit gaan we realiseren door o.a. aan ziekenhuizen en andere gezondheidsinstellingen te vragen om afgeschreven materialen te doneren."
+    }
+  }
 }

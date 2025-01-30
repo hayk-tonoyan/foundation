@@ -6,7 +6,7 @@ import { LangMappingEnum } from '@/common/enums';
 export async function middleware(request: NextRequest) {
   const response = createMiddleware({
     locales: Object.values(LangMappingEnum),
-    defaultLocale: LangMappingEnum.en,
+    defaultLocale: LangMappingEnum.nl,
     localePrefix: 'as-needed',
   })(request);
 

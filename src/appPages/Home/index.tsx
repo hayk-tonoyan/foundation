@@ -2,7 +2,7 @@ import Image from "next/image";
 import {useTranslations} from "next-intl";
 
 import AboutPage from "@/appPages/About";
-import HelpPage from "@/appPages/Help";
+import HelpPage from "../Stories";
 import Slider from "@/components/Slider";
 
 import image from '../../assets/png/img.png';

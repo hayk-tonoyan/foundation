@@ -21,11 +21,14 @@ export default async function Header() {
           <Link href="/">
             {t('home')}
           </Link>
+          <Link href="/stories">
+            {t('stories')}
+          </Link>
           <Link href="/about">
             {t('aboutUs')}
           </Link>
-          <Link href="/help">
-            {t('livesYouCanChange')}
+          <Link href="/team">
+            {t('team')}
           </Link>
           <Link href="/anbi">
             ANBI

@@ -22,6 +22,12 @@
     }
   }
 
+  .donate-qr {
+    img {
+      width: 250px;
+    }
+  }
+
   .page-info {
     gap: 40px;
     display: flex;

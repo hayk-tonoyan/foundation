@@ -15,7 +15,7 @@ export default function SubHeader() {
         {!isMobile && (
           <>
             <span className="ellipsis">{t('callUs')}</span>
-            <span>:</span>
+            <span style={{ marginInlineEnd: '4px' }}>:</span>
           </>
         )}
         +37477060591
@@ -24,7 +24,7 @@ export default function SubHeader() {
         {!isMobile && (
           <>
             <span className="ellipsis">{t('emailUs')}</span>
-            <span>:</span>
+            <span style={{ marginInlineEnd: '4px' }}>:</span>
           </>
         )}
         info@hay-network.com

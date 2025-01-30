@@ -21,6 +21,11 @@
       flex-direction: column;
 
       li {
+        a {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
     }
   }
