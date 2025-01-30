@@ -11,14 +11,14 @@ export default function SubHeader() {
 
   return (
     <div className="contact-panel">
-      <a href="tel:+37477060591">
+      <a href="tel:+31651852165">
         {!isMobile && (
           <>
             <span className="ellipsis">{t('callUs')}</span>
             <span style={{ marginInlineEnd: '4px' }}>:</span>
           </>
         )}
-        +37477060591
+        +31651852165
       </a>
       <a href="mailto:info@hay-network.com">
         {!isMobile && (
