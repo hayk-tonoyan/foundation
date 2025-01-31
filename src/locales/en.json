@@ -21,6 +21,29 @@
   "chairman": "Chairman",
   "secretary": "Secretary",
   "treasurer": "Treasurer",
+  "kvk_number": "KVK Number: 92743234",
+  "rsin": "RSIN: 866158959",
+  "account_number": "Account Number: NL92INGB0108325733",
+  "postal_address": "Postal Address: Smaragd 123, 5231 KH ‘s-Hertogenbosch",
+  "phone": "Phone: +31651852165",
+  "email": "Email: info@hay-network.com",
+  "mission": "Hay Network Foundation is an organization dedicated to supporting and improving the well-being of the Armenian diaspora and those in need with Armenian roots.",
+  "goals": {
+    "title": "Goals",
+    "1": "Provide educational support to the Armenian diaspora.",
+    "2": "Provide humanitarian aid to those in need with Armenian roots.",
+    "3": "Offer assistance to orphanages, the elderly, and people with disabilities.",
+    "4": "Create partnerships and strengthen and encourage Dutch organizations, businesses, and government bodies for projects, in the broadest sense of the word."
+  },
+  "main_goals_policy_plan": {
+    "title": "Main Goals Policy Plan",
+    "1": "Request support from educational institutions, including necessary materials, and provide advice.",
+    "2": "Request (material) assistance from businesses, (government) bodies, and individuals.",
+    "3": "Organize events to raise funds and/or goods.",
+    "4": "Request hospitals and other health institutions to donate (written off) materials.",
+    "5": "Search for internships and job assignments, as well as online jobs for graduates, in the broadest sense of the word."
+  },
+  "compensation_policy_and_reimbursements": "Apart from the reimbursement of their expenses, board members and volunteers do not receive compensation for their services to the foundation.",
   "sliders": {
     "1": {
       "title": "Educational Support for the Armenian Diaspora",

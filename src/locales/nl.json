@@ -21,6 +21,29 @@
   "chairman": "Voorzitter",
   "secretary": "Secretaris",
   "treasurer": "Penningmeester",
+  "kvk_number": "KVK Nummer: 92743234",
+  "rsin": "RSIN: 866158959",
+  "account_number": "Rekeningnummer: NL92INGB0108325733",
+  "postal_address": "Postadres: Smaragd 123, 5231 KH ‘s-Hertogenbosch",
+  "phone": "Telefoon: +31651852165",
+  "email": "E-mail: info@hay-network.com",
+  "mission": "Hay Network Foundation is een organisatie die zich inzet voor de ondersteuning en verbetering van het welzijn van de Armeense diaspora en hulpbehoevenden met Armeense wortels.",
+  "goals": {
+    "title": "Doelen",
+    "1": "Het bieden van ondersteuning bij onderwijs voor de Armeense diaspora.",
+    "2": "Het verlenen van humanitaire hulp aan hulpbehoevenden met Armeense wortels.",
+    "3": "Het bieden van hulp aan weeshuizen, ouderen en mensen met een handicap.",
+    "4": "Het creëren van samenwerkingsverbanden, alsmede het versterken en stimuleren van Nederlandse organisaties, bedrijven en overheden voor projecten, alles in de ruimste zin van het woord."
+  },
+  "main_goals_policy_plan": {
+    "title": "Hoofddoelen beleidsplan",
+    "1": "Het verzoeken van onderwijsinstellingen om ondersteuning te bieden, onder andere in benodigdheden (materialen), en het geven van advies.",
+    "2": "Het vragen van (materiële) hulp aan bedrijven, (overheid)instanties en individuen.",
+    "3": "Het organiseren van bijeenkomsten om geld en/of goederen in te zamelen.",
+    "4": "Het vragen van ziekenhuizen en andere gezondheidsinstellingen om (afgeschreven) materialen te doneren.",
+    "5": "Het zoeken naar stageplekken en -opdrachten en online banen voor afgestudeerden, alles in de ruimste zin van het woord."
+  },
+  "compensation_policy_and_reimbursements": "Buiten de vergoeding van de door hen gemaakte kosten, ontvangen de bestuursleden en vrijwilligers geen beloning voor hun diensten aan de stichting.",
   "sliders": {
     "1": {
       "title": "Onderwijssteun voor Armeense diaspora",
