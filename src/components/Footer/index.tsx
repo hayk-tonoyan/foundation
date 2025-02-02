@@ -1,4 +1,5 @@
 import Image from "next/image";
+import {useTranslations} from "next-intl";
 
 import WhatsappIcon from "@/assets/svg/whatsapp.svg";
 import { MEMBERS } from '@/common/constants';
@@ -6,6 +7,8 @@ import { MEMBERS } from '@/common/constants';
 import './index.css';
 
 const Footer = () => {
+  const t = useTranslations();
+
   return (
     <div className="footer-holder">
       <div className="footer">
@@ -14,7 +17,7 @@ const Footer = () => {
           <ul>
             <li>Stichting Hay Network</li>
             <li>NL92INGB0108325733</li>
-            <li>KVK Number: 92743234</li>
+            <li>{t('kvk_number')}</li>
           </ul>
         </div>
         <div className="contact-info">

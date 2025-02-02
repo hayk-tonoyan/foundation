@@ -28,6 +28,7 @@
   "phone": "Telefoon: +31651852165",
   "email": "E-mail: info@hay-network.com",
   "mission": "Hay Network Foundation is een organisatie die zich inzet voor de ondersteuning en verbetering van het welzijn van de Armeense diaspora en hulpbehoevenden met Armeense wortels.",
+  "swiftCode": "Swift code",
   "goals": {
     "title": "Doelen",
     "1": "Het bieden van ondersteuning bij onderwijs voor de Armeense diaspora.",
@@ -46,16 +47,16 @@
   "compensation_policy_and_reimbursements": "Buiten de vergoeding van de door hen gemaakte kosten, ontvangen de bestuursleden en vrijwilligers geen beloning voor hun diensten aan de stichting.",
   "sliders": {
     "1": {
-      "title": "Onderwijssteun voor Armeense diaspora",
-      "description": "Onderwijs Eén van onze missies is het bieden van ondersteuning bij onderwijs voor de Armeense diaspora. We gaan dit o.a. doen door onderwijsinstellingen verzoeken om ondersteuning te bieden, onder andere in benodigdheden (materialen), en het geven van advies."
+      "title": "Onderwijs",
+      "description": "Eén van onze missies is het bieden van ondersteuning bij onderwijs voor de Armeense diaspora. We gaan dit o.a. doen door onderwijsinstellingen verzoeken om ondersteuning te bieden, onder andere in benodigdheden (materialen), en het geven van advies."
     },
     "2": {
-      "title": "Humanitaire hulp voor Armeniërs",
-      "description": "Humanitaire hulp Een andere missie is het verlenen van humanitaire hulp aan hulpbehoevenden met Armeense wortels. We willen dit doen door het vragen van materiële hulp aan bedrijven, (overheid)instanties en individuen."
+      "title": "Humanitaire hulp",
+      "description": "Een andere missie is het verlenen van humanitaire hulp aan hulpbehoevenden met Armeense wortels. We willen dit doen door het vragen van materiële hulp aan bedrijven, (overheid)instanties en individuen."
     },
     "3": {
-      "title": "Steun voor weeshuizen en ouderenzorg",
-      "description": "Weeshuizen en ouderenzorg We willen ook graag hulp bieden aan weeshuizen, ouderen en mensen met een handicap. Dit gaan we realiseren door o.a. aan ziekenhuizen en andere gezondheidsinstellingen te vragen om afgeschreven materialen te doneren."
+      "title": "Weeshuizen en ouderenzorg",
+      "description": "We willen ook graag hulp bieden aan weeshuizen, ouderen en mensen met een handicap. Dit gaan we realiseren door o.a. aan ziekenhuizen en andere gezondheidsinstellingen te vragen om afgeschreven materialen te doneren."
     }
   }
 }

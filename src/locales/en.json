@@ -28,6 +28,7 @@
   "phone": "Phone: +31651852165",
   "email": "Email: info@hay-network.com",
   "mission": "Hay Network Foundation is an organization dedicated to supporting and improving the well-being of the Armenian diaspora and those in need with Armenian roots.",
+  "swiftCode": "Swift code",
   "goals": {
     "title": "Goals",
     "1": "Provide educational support to the Armenian diaspora.",
@@ -46,16 +47,16 @@
   "compensation_policy_and_reimbursements": "Apart from the reimbursement of their expenses, board members and volunteers do not receive compensation for their services to the foundation.",
   "sliders": {
     "1": {
-      "title": "Educational Support for the Armenian Diaspora",
-      "description": "Education One of our missions is to provide support for education within the Armenian diaspora. We aim to achieve this by requesting educational institutions to offer assistance, including necessary materials, as well as providing advice."
+      "title": "Education",
+      "description": "One of our missions is to provide support for education within the Armenian diaspora. We aim to achieve this by requesting educational institutions to offer assistance, including necessary materials, as well as providing advice."
     },
     "2": {
-      "title": "Humanitarian Aid for Armenians",
-      "description": "Humanitarian Aid Another mission is to provide humanitarian aid to those in need with Armenian roots. We intend to do this by requesting material support from companies, (government) institutions, and individuals."
+      "title": "Humanitarian",
+      "description": "Aid Another mission is to provide humanitarian aid to those in need with Armenian roots. We intend to do this by requesting material support from companies, (government) institutions, and individuals."
     },
     "3": {
-      "title": "Support for Orphanages and Elderly Care",
-      "description": "Orphanages and Elderly Care We also want to provide support to orphanages, the elderly, and people with disabilities. We will achieve this by requesting hospitals and other healthcare institutions to donate decommissioned materials."
+      "title": "Orphanages and Elderly Care",
+      "description": "We also want to provide support to orphanages, the elderly, and people with disabilities. We will achieve this by requesting hospitals and other healthcare institutions to donate decommissioned materials."
     }
   }
 }

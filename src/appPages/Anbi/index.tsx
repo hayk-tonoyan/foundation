@@ -50,7 +50,7 @@ export default function Anbi() {
 
           <div className="pdf-container">
             <h4>Beleidsplan Hay Network.pdf</h4>
-            <iframe title="pdf2" src="https://drive.google.com/file/d/15-nSsnDx3eugGg22hag7ZrMHWL3tgTlk/preview"></iframe>
+            <iframe title="pdf2" src="https://drive.google.com/file/d/1TJarUQLq_7VucofeM-Db3VPFZJIS9C14/preview"></iframe>
           </div>
         </div>
       </div>

@@ -46,11 +46,11 @@
 }
 
 .pdf-viewers {
+  gap: 24px;
   width: 100%;
   display: flex;
 
   .mobile & {
-    gap: 24px;
     flex-direction: column;
   }
 }
