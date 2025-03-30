@@ -1,18 +1,21 @@
 'use client';
 
 import Link from "next/link";
+import {useTranslations} from "next-intl";
 import { useMemo } from "react";
 import SliderComponent, { Settings } from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import useHelpData from "@/hooks/useHelpData";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './index.css';
 
 // @ts-ignore
 const Slider = SliderComponent as unknown as React.ComponentType<>;
 
 function SwipeToSlide() {
+  const t = useTranslations();
   const helpData = useHelpData();
 
   const settings: Settings = {
@@ -31,7 +34,7 @@ function SwipeToSlide() {
       <div className="slide-info">
         <h2>{title}</h2>
         <p>{description}</p>
-        <Link href="/" className="learn-mor-button">Learn More</Link>
+        <Link href="/" className="learn-mor-button">{t('learnMore')}</Link>
       </div>
       {/*@ts-ignore*/}
       <img src={imageSrc} alt={title} />

@@ -27,8 +27,8 @@ export default async function Header() {
           <Link href="/about">
             {t('aboutUs')}
           </Link>
-          <Link href="/team">
-            {t('team')}
+          <Link href="/contact">
+            {t('contact')}
           </Link>
           <Link href="/anbi">
             ANBI

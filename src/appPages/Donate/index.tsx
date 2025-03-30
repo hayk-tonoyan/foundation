@@ -9,7 +9,7 @@ export default function DonatePage() {
 
   return (
     <div className="donate-page-holder page">
-      <h2 className="page-title ellipsis">Donate</h2>
+      <h2 className="page-title ellipsis">{t('donate')}</h2>
       <div className="donate-page">
         <div className="page-poster">
         </div>

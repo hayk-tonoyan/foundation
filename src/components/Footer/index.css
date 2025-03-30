@@ -9,6 +9,32 @@
     align-items: flex-start;
     justify-content: center;
 
+    .follow-us {
+      gap: 20px;
+      display: flex;
+
+      .social-icon-holder {
+        &:hover {
+          img {
+            transform: scale(1.06);
+          }
+        }
+      }
+
+      a {
+        padding: 8px;
+        display: flex;
+        background: white;
+        border-radius: 8px;
+      }
+
+      img {
+        margin: auto;
+        height: 26px;
+        transition: 300ms;
+      }
+    }
+
     .mobile & {
       flex-direction: column;
     }

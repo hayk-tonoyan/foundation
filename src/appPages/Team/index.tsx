@@ -11,12 +11,12 @@ export default function TeamPage() {
 
   return (
     <div className="team-page-holder page">
-      <h2 className="page-title ellipsis">{t('team')}</h2>
+      <h2 className="page-title ellipsis">{t('contact')}</h2>
       <div className="team-page">
         {Object.entries(MEMBERS).map(([key, { name, avatar, phone, whatsapp }]) => (
           <div key={key} className="team-member-card">
             <img src={avatar} alt="profile"/>
-            <h3>{key}</h3>
+            <h3>{t(key)}</h3>
             <h2>{name}</h2>
             <a href={`tel:${phone}`}>
               {phone}

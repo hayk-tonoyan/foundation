@@ -12,6 +12,8 @@ const findLanguage = (value: string) => {
     return '🇬🇧 EN';
   } else if (value.includes('/am')) {
     return '🇦🇲 AM';
+  } else if (value.includes('/ru')) {
+    return '🇷🇺 RU';
   }
   return '🇳🇱 NL';
 }
@@ -90,6 +92,21 @@ const LanguageSwitcher = () => {
             }}
           >
             🇦🇲 AM
+          </button>
+          <button
+            onClick={() => handleSelectLanguage('ru', 'Russian', '🇷🇺')}
+            className="dropdown-item"
+            style={{
+              padding: '10px',
+              cursor: 'pointer',
+              borderBottom: '1px solid #ddd',
+              background: 'none',
+              border: 'none',
+              width: '100%',
+              textAlign: 'left'
+            }}
+          >
+            🇷🇺 RU
           </button>
         </div>
       )}
