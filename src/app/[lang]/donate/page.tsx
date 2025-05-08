@@ -1,5 +1,5 @@
 import DonatePage from "@/appPages/Donate";
 
-export default function Home() {
+export default function Donate() {
   return <DonatePage />;
 };

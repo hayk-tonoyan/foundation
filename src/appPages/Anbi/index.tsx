@@ -4,7 +4,7 @@ import {useTranslations} from "next-intl";
 
 import './index.css';
 
-export default function Anbi() {
+export default function AnbiPage() {
   const t = useTranslations();
 
   return (

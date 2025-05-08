@@ -4,6 +4,13 @@ import createMiddleware from 'next-intl/middleware';
 import { LangMappingEnum } from '@/common/enums';
 
 export async function middleware(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+  if (
+    pathname === '/robots.txt'
+  ) {
+    return NextResponse.next();
+  }
+
   const response = createMiddleware({
     locales: Object.values(LangMappingEnum),
     defaultLocale: LangMappingEnum.nl,
@@ -15,6 +22,12 @@ export async function middleware(request: NextRequest) {
   const isMobile = device.type === 'mobile';
 
   const url = request.nextUrl.clone();
+
+  if (pathname.includes('admin')) {
+    response.cookies.set('admin', 'true');
+  } else {
+    response.cookies.set('admin', 'false');
+  }
 
   const hasMobileParam = url.searchParams.has('isMobile');
 
@@ -42,3 +55,23 @@ export const config = {
     '/(en)/(:path*|:param*)',
   ],
 };
+
+// <script type="module">
+// // Import the functions you need from the SDKs you need
+// import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+// // TODO: Add SDKs for Firebase products that you want to use
+// // https://firebase.google.com/docs/web/setup#available-libraries
+//
+// // Your web app's Firebase configuration
+// const firebaseConfig = {
+//   apiKey: "AIzaSyD0PtcSH8MMqeXlar058cYs2XNGu0Zs9GM",
+//   authDomain: "hay-netowrk.firebaseapp.com",
+//   projectId: "hay-netowrk",
+//   storageBucket: "hay-netowrk.firebasestorage.app",
+//   messagingSenderId: "24880228662",
+//   appId: "1:24880228662:web:fc05c8245537bf66cfeb97"
+// };
+//
+// // Initialize Firebase
+// const app = initializeApp(firebaseConfig);
+// </script>

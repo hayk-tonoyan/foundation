@@ -1,5 +1,5 @@
 import StoriesPage from "../../../appPages/Stories";
 
-export default function Home() {
+export default function Stories() {
   return <StoriesPage />;
 }

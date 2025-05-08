@@ -1,0 +1,87 @@
+.loading {
+    font-size: 1rem;
+    text-align: center;
+    padding: 16px;
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.login-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.login-error {
+    color: #e53e3e;
+}
+
+.login-input {
+    border: 1px solid #cbd5e0;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.login-button {
+    background-color: #3182ce;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.login-button:hover {
+    background-color: #2b6cb0;
+}
+
+.login-button:disabled {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.auth-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-header-container {
+    width: 100%;
+    display: flex;
+    padding: 10px 24px;
+    align-items: center;
+    background: #2c3e50;
+    justify-content: space-between;
+
+    .admin-title {
+        gap: 8px;
+        color: white;
+        display: flex;
+        font-size: 24px;
+        align-items: center;
+    }
+}
+
+.logout-button {
+    align-self: flex-end;
+    background-color: #e53e3e;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto 0;
+}
+
+.logout-button:hover {
+    background-color: #c53030;
+}

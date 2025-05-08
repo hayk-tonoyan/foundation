@@ -1,5 +1,5 @@
-import Anbi from "@/appPages/Anbi";
+import AnbiPage from "@/appPages/Anbi";
 
-export default function Home() {
-  return <Anbi />;
+export default function Anbi() {
+  return <AnbiPage />;
 };

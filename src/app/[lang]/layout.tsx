@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { cookies } from 'next/headers';
 import { NextIntlClientProvider } from 'next-intl';
 
 import { META_DESCRIPTION, META_TITLE } from '@/common/constants';
@@ -104,6 +105,9 @@ export default async function RootLayout({
     locale: locale,
   });
 
+  const cookieStore = await cookies();
+  const isPrivateRoute = cookieStore.get('admin')?.value === 'true';
+
   return (
     <html lang={locale}>
       {/*<head>*/}
@@ -116,25 +120,29 @@ export default async function RootLayout({
       {/*  <meta property="og:type" content="website" />*/}
       {/*</head>*/}
       <body>
-        <MobileViewDetector>
-          <ReactQueryProvider>
-            <NextIntlClientProvider locale={locale} messages={messages}>
-              <StyledComponentsProvider>
-                <div className="main-wrapper">
-                  <HeaderWrapper>
-                    <SubHeader />
-                    <Header/>
-                  </HeaderWrapper>
-                  <StyledAppWrapper>
-                    {children}
-                  </StyledAppWrapper>
-                  <Footer />
-                  <Toaster />
-                </div>
-              </StyledComponentsProvider>
-            </NextIntlClientProvider>
-          </ReactQueryProvider>
-        </MobileViewDetector>
+        {isPrivateRoute ? (
+          children
+        ) : (
+          <MobileViewDetector>
+            <ReactQueryProvider>
+              <NextIntlClientProvider locale={locale} messages={messages}>
+                <StyledComponentsProvider>
+                  <div className="main-wrapper">
+                    <HeaderWrapper>
+                      <SubHeader />
+                      <Header/>
+                    </HeaderWrapper>
+                    <StyledAppWrapper>
+                      {children}
+                    </StyledAppWrapper>
+                    <Footer />
+                    <Toaster />
+                  </div>
+                </StyledComponentsProvider>
+              </NextIntlClientProvider>
+            </ReactQueryProvider>
+          </MobileViewDetector>
+        )}
       </body>
     </html>
   );
